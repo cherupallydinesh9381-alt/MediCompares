@@ -1,77 +1,138 @@
-# 🕉️ Lord Venkateswara Image Processing
+# MediCompares
 
-A Python-based image processing project designed to enhance, transform, and create artistic versions of Lord Venkateswara images using **Python, OpenCV, and NumPy**.
+MediCompares is a **medical product comparison web application** built with React and Vite. It helps users explore medical products, compare prices, vendors, and product details through a responsive web interface.
 
-The project demonstrates how digital image processing techniques can be used to improve image clarity and create creative visual effects such as a neon sketch.
+## Features
 
----
+* Medical product listing
+* Product price comparison
+* Vendor information
+* Product details
+* Product comparison
+* Dynamic service sections
+* Responsive design for mobile, tablet, laptop, and desktop
+* Multiple medical service categories
+* Image and asset handling
+* Lazy-loaded sections for improved performance
+* Vite production build
+* Vercel deployment support
 
-## 📌 Project Overview
+## Tech Stack
 
-This project takes an input image and processes it using Python-based image processing techniques.
+* **React**
+* **Vite**
+* **JavaScript / JSX**
+* **React Router**
+* **React Slick**
+* **Bootstrap / CSS**
+* **Font Awesome / Icon libraries**
+* **REST API integration**
 
-The program can:
-
-- Enhance image clarity
-- Improve image appearance
-- Process image details
-- Generate a clearer/enhanced version
-- Create a neon sketch effect
-- Save processed images automatically
-
-This project is useful for understanding practical image processing concepts using Python and OpenCV.
-
----
-
-## ✨ Features
-
-### 🖼️ Image Enhancement
-
-Improves the visual quality and clarity of the input image.
-
-### ✨ Clear Image Generation
-
-Creates an enhanced version of the original image with improved details.
-
-### 🎨 Neon Sketch Effect
-
-Transforms the original image into a creative neon-style sketch.
-
-### ⚡ Automated Processing
-
-The complete image-processing workflow is handled through a Python script.
-
-### 💾 Automatic Output
-
-Processed images are saved as separate image files for easy access.
-
----
-
-## 🛠️ Technologies Used
-
-| Technology | Purpose |
-|------------|---------|
-| Python 3.13.2 | Main programming language |
-| OpenCV | Image processing |
-| NumPy | Image and numerical operations |
-| VS Code | Development environment |
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
-lord-venkateswara/
+MediCompares/
 │
-├── pic.py
+├── public/
+│   ├── assets/
+│   └── ...
 │
-├── krish.png
-├── krish 1.png
+├── src/
+│   ├── components/
+│   │   └── ui/
+│   ├── feature-module/
+│   │   └── frontend/
+│   ├── utils/
+│   └── ...
 │
-├── output_clear_photo.png
-├── output_neon_sketch.png
-│
-├── requirements.txt
-├── README.md
-├── LICENSE
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
 └── .gitignore
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/cherupallydinesh9381-alt/MediCompares.git
+```
+
+Go to the project directory:
+
+```bash
+cd MediCompares
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Run Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+## Production Build
+
+Create the production build:
+
+```bash
+npm run build
+```
+
+The production files are generated in:
+
+```text
+dist/
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+The project is configured for **Vercel deployment** using Vite.
+
+### Vercel Settings
+
+```text
+Framework Preset: Vite
+Build Command: npm run build
+Output Directory: dist
+Root Directory: /
+```
+
+`node_modules/` and `dist/` should not be committed to GitHub.
+
+## Git Workflow
+
+```bash
+git add .
+git commit -m "Update MediCompares"
+git push origin main
+```
+
+## Project Purpose
+
+MediCompares provides a centralized platform for users to discover medical products and services and make informed decisions by comparing available products, prices, and vendors.
+
+## License
+
+This project is intended for the MediCompares application and its associated development purposes.
