@@ -2649,7 +2649,7 @@ const Home2 = ({ handleProductClick: propHandleProductClick }) => {
                 </div>
 
                 <div className="col-lg-7 col-md-12">
-                  <div className="row g-1">
+                  <div className="row g-4">
                     {[
                       {
                         id: 1,

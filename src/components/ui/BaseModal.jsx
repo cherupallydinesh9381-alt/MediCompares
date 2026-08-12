@@ -56,7 +56,7 @@ const BaseModal = ({
             <div
               className={`modal-header ${headerClassName}`}
               style={{
-                borderBottom: "1px solid #e9ecef",
+                borderBottom: "1px solid #00aeff",
                 padding: "20px 24px 16px",
               }}
             >

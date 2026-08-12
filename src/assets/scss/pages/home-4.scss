@@ -5,7 +5,7 @@
 
 .section-search-3 {
     position: variables.$relative;
-    background: url(../../../../public/assets/img/banner-3.jpg);
+    background: url(/assets/img/banner-3.jpg);
     background-position: 50% 0;
     background-size: variables.$cover;
     background-repeat: variables.$no-repeat;
@@ -224,7 +224,7 @@
     }
 }
 .clinic-specialities {
-    background: url(../../../../public/assets/img/special-banner.jpg);
+    background: url(/assets/img/special-banner.jpg);
     padding: 60px 0;
     background-size: variables.$cover;
     background-repeat: variables.$no-repeat;
@@ -393,7 +393,7 @@
         }
     }
     .doc-background {
-        background: url(../../../../public/assets/img/shapes/doctor-bg.jpg);
+        background: url(/assets/img/shapes/doctor-bg.jpg);
         background-position: variables.$center;
         min-height: 350px;
         background-size: variables.$cover;
@@ -466,7 +466,7 @@
         }
     }
     .pat-background {
-        background: url(../../../../public/assets/img/shapes/doctor-right-bg.jpg);
+        background: url(/assets/img/shapes/doctor-right-bg.jpg);
         background-position: variables.$center;
         min-height: 350px;
         background-size: variables.$cover;
@@ -499,7 +499,7 @@
     }
 }
 .book-section {
-    background: url(../../../../public/assets/img/special-banner.jpg);
+    background: url(/assets/img/special-banner.jpg);
     padding: 60px 0;
     background-size: variables.$cover;
     background-repeat: variables.$no-repeat;
@@ -727,7 +727,7 @@
 .browse-section {
     &.brower-category {
         padding: 60px 0;
-        background: url(../../../../public/assets/img/slider/banner-02.jpg);
+        background: url(/assets/img/slider/banner-02.jpg);
         background-size: variables.$cover;
         background-repeat: variables.$no-repeat;
         background-position: variables.$center;
@@ -762,7 +762,7 @@
 .doctor-divison {
     &.provider-select {
         .doc-background {
-            background: url(../../../../public/assets/img/shapes/doctor-bg.jpg);
+            background: url(/assets/img/shapes/doctor-bg.jpg);
             background-size: variables.$cover;
             padding: 60px 30px;
             &::before {
@@ -779,7 +779,7 @@
             }
         }
         .pat-background {
-            background: url(../../../../public/assets/img/shapes/doctor-right-bg.jpg);
+            background: url(/assets/img/shapes/doctor-right-bg.jpg);
             background-size: variables.$cover;
             padding: 60px 30px;
             &::before {

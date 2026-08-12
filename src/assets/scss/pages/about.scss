@@ -354,7 +354,7 @@
 	z-index: 1;
 	&::after {
 		content: '';
-		background: url(../../../../public/assets/img/bg/doctor-shape-img1.png);
+		background: url(/assets/img/bg/doctor-shape-img1.png);
         @include mixins.background-properties(variables.$cover, variables.$no_repeat, variables.$left);
         @include mixins.position(variables.$absolute, 0, null, null, 0);
 		width: 213px;
@@ -367,7 +367,7 @@
 	}
 	&::before {
 		content: '';
-		background: url(../../../../public/assets/img/bg/doctor-shape-img2.png);
+		background: url(/assets/img/bg/doctor-shape-img2.png);
         @include mixins.background-properties(variables.$cover, variables.$no_repeat, variables.$right);
         @include mixins.position(variables.$absolute, null, 0, 0, null);
         opacity: 0.5;

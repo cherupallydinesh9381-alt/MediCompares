@@ -73,7 +73,7 @@
           }
           .select2-selection__arrow {
             b {
-              background-image: url(../../../../public/assets/img/icons/down-arrow-gray-dark.svg);
+              background-image: url(/assets/img/icons/down-arrow-gray-dark.svg);
             }
           }
         }
@@ -250,7 +250,7 @@ span {
           }
           .select2-selection__arrow {
             b {
-              background-image: url(../../../../public/assets/img/icons/down-arrow-gray.svg);
+              background-image: url(/assets/img/icons/down-arrow-gray.svg);
             }
           }
         }
@@ -261,7 +261,7 @@ span {
     }
     .search-location-input-box {
       input {
-        background-image: url(../../../../public/assets/img/icons/.svg);
+        background-image: url(/assets/img/icons/.svg);
         background-repeat: variables.$no_repeat;
         background-position: 10px 50%;
         background-size: 16px;
@@ -312,7 +312,7 @@ span {
         &.active-done {
           background-color: colors.$celeste;
           color: variables.$white;
-          background-image: url(../../../../public/assets/img/icons/tick-icon.svg);
+          background-image: url(/assets/img/icons/tick-icon.svg);
           background-repeat: variables.$no-repeat;
           background-position: variables.$center;
           background-size: 18px;
@@ -686,7 +686,7 @@ span {
         text-align: variables.$left;
         @include mixins.margin-padding(null, 0 12px);
         &:after {
-          background-image: url(../../../../public/assets/img/icons/down-arrow-gray-dark.svg);
+          background-image: url(/assets/img/icons/down-arrow-gray-dark.svg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -724,7 +724,7 @@ span {
       &.flagstrap-ng,
       &.flagstrap-gb,
       &.flagstrap-us {
-        background-image: url(../../../../public/assets/img/flag/india.png);
+        background-image: url(/assets/img/flag/india.png);
         background-position: variables.$center;
         width: 33px;
         height: 22px;
@@ -732,13 +732,13 @@ span {
         border-radius: 4px;
       }
       &.flagstrap-ng {
-        background-image: url(../../../../public/assets/img/flag/ng.png);
+        background-image: url(/assets/img/flag/ng.png);
       }
       &.flagstrap-gb {
-        background-image: url(../../../../public/assets/img/flag/gb.png);
+        background-image: url(/assets/img/flag/gb.png);
       }
       &.flagstrap-us {
-        background-image: url(../../../../public/assets/img/flag/usa.png);
+        background-image: url(/assets/img/flag/usa.png);
       }
     }
   }
@@ -776,7 +776,7 @@ span {
     .select2-selection--single {
       .select2-selection__arrow {
         b {
-          background-image: url(../../../../public/assets/img/icons/down-arrow-gray.svg);
+          background-image: url(/assets/img/icons/down-arrow-gray.svg);
         }
       }
     }

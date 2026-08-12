@@ -478,19 +478,19 @@ const processProductData = (
 
   /* ─── price() ─── */
   const rawPrice =
-  variants?.price ??
-  normalizedItem?.vendordetails?.sellingPrice ??
-  normalizedItem?.vendordetails?.price ??
-  item?.vendor?.sellingPrice ??
-  item?.vendor?.price ??
-  item?.sellingPrice ??
-  item?.price ??
-  item?.tablet?.price ??
-  item?.tabletdetails?.price ??
-  item?.productDetails?.price ??
-  0;
+    variants?.price ??
+    normalizedItem?.vendordetails?.sellingPrice ??
+    normalizedItem?.vendordetails?.price ??
+    item?.vendor?.sellingPrice ??
+    item?.vendor?.price ??
+    item?.sellingPrice ??
+    item?.price ??
+    item?.tablet?.price ??
+    item?.tabletdetails?.price ??
+    item?.productDetails?.price ??
+    0;
 
-const priceValue = Number(rawPrice) || 0;
+  const priceValue = Number(rawPrice) || 0;
   const productPrice =
     Number.isFinite(priceValue) && priceValue > 0
       ? `₹ ${priceValue.toLocaleString("en-IN", {
@@ -501,15 +501,15 @@ const priceValue = Number(rawPrice) || 0;
 
   /* ─── discount() ─── */
   const rawDiscountPrice =
-  variants?.discountPrice ??
-  normalizedItem?.vendordetails?.discountprice ??
-  item?.vendor?.discountPrice ??
-  item?.vendor?.discountprice ??
-  item?.discountPrice ??
-  item?.discountprice ??
-  0;
+    variants?.discountPrice ??
+    normalizedItem?.vendordetails?.discountprice ??
+    item?.vendor?.discountPrice ??
+    item?.vendor?.discountprice ??
+    item?.discountPrice ??
+    item?.discountprice ??
+    0;
 
-const discountPrice = Number(rawDiscountPrice) || 0;
+  const discountPrice = Number(rawDiscountPrice) || 0;
   const discountPercent =
     discountPrice && priceValue && discountPrice < priceValue
       ? Math.round(((priceValue - discountPrice) / priceValue) * 100)
@@ -529,25 +529,25 @@ const discountPrice = Number(rawDiscountPrice) || 0;
     "Medi Compares";
 
   /* ─── vendorImage() ─── */
-const vendorImageResult = buildImageSrc([
-  normalizedItem?.vendordetails?.bussiness_image,
-  normalizedItem?.vendordetails?.bussinessdetails?.bussiness_image,
-  item?.vendor?.bussiness_image,
-  item?.vendor?.bussinessdetails?.bussiness_image,
-  item?.supplier?.bussiness_image,
-  item?.manufacturer?.bussiness_image,
-  item?.vendor?.image,
-  item?.supplier?.image,
-  item?.manufacturer?.image,
-  item?.vendor?.logo,
-  item?.supplier?.logo,
-  item?.manufacturer?.logo,
-], imgUrl);
+  const vendorImageResult = buildImageSrc([
+    normalizedItem?.vendordetails?.bussiness_image,
+    normalizedItem?.vendordetails?.bussinessdetails?.bussiness_image,
+    item?.vendor?.bussiness_image,
+    item?.vendor?.bussinessdetails?.bussiness_image,
+    item?.supplier?.bussiness_image,
+    item?.manufacturer?.bussiness_image,
+    item?.vendor?.image,
+    item?.supplier?.image,
+    item?.manufacturer?.image,
+    item?.vendor?.logo,
+    item?.supplier?.logo,
+    item?.manufacturer?.logo,
+  ], imgUrl);
 
-const vendorImageSrc =
-  vendorImageResult && vendorImageResult !== PLACEHOLDER_IMG
-    ? vendorImageResult
-    : DEFAULT_VENDOR_LOGO;
+  const vendorImageSrc =
+    vendorImageResult && vendorImageResult !== PLACEHOLDER_IMG
+      ? vendorImageResult
+      : DEFAULT_VENDOR_LOGO;
 
   /* ─── stock() ─── */
   const stockCount = Number(variants?.stock || normalizedItem?.vendordetails?.stock || 999);
@@ -568,28 +568,28 @@ const vendorImageSrc =
   const onClickProduct = () => onProductClick(normalizedItem, serviceSlug);
   const onClickCompare = (e) => { e.stopPropagation(); onCompareClick(normalizedItem, section); };
   const onClickVendor = (e) => {
-  e.stopPropagation();
+    e.stopPropagation();
 
-  const vendor =
-    item?.vendor ||
-    normalizedItem?.vendordetails ||
-    item?.supplier ||
-    item?.manufacturer ||
-    item?.vendorDetails ||
-    null;
+    const vendor =
+      item?.vendor ||
+      normalizedItem?.vendordetails ||
+      item?.supplier ||
+      item?.manufacturer ||
+      item?.vendorDetails ||
+      null;
 
-  if (!vendor) {
-    console.warn("Vendor data not found:", item);
-    return;
-  }
+    if (!vendor) {
+      console.warn("Vendor data not found:", item);
+      return;
+    }
 
-  onVendorClick(vendor);
-};
+    onVendorClick(vendor);
+  };
   const onImageError = (e) => { e.currentTarget.onerror = null; e.currentTarget.src = PLACEHOLDER_IMG; };
   const onVendorImageError = (e) => {
-  e.currentTarget.onerror = null;
-  e.currentTarget.src = DEFAULT_VENDOR_LOGO;
-};
+    e.currentTarget.onerror = null;
+    e.currentTarget.src = DEFAULT_VENDOR_LOGO;
+  };
 
   return {
     normalizedItem, imageSrc, productTitle, priceValue, productPrice,
@@ -736,8 +736,8 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
             }}
           >
             {d.vendorImageSrc ? (
-              <img  src={d.vendorImageSrc || "/Medicompares-Vendor.jpg"}
-               alt={d.vendorName || "Vendor"}
+              <img src={d.vendorImageSrc || "/Medicompares-Vendor.jpg"}
+                alt={d.vendorName || "Vendor"}
                 onError={d.onVendorImageError}
                 style={{ width: "38px", top: "2px", height: "38px", borderRadius: "50%", objectFit: "contain", border: `1px solid ${theme.accentSoft}` }}
               />
@@ -1052,9 +1052,9 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
             }}
           >
             {d.vendorImageSrc ? (
-          <img  src={d.vendorImageSrc || "/Medicompares-Vendor.jpg"}
-               alt={d.vendorName || "Vendor"}
-              onError={d.onVendorImageError}
+              <img src={d.vendorImageSrc || "/Medicompares-Vendor.jpg"}
+                alt={d.vendorName || "Vendor"}
+                onError={d.onVendorImageError}
                 style={{ width: "30px", height: "30px", borderRadius: "6px", objectFit: "contain", border: `1px solid ${theme.accentSoft}` }}
               />
             ) : (
@@ -1071,11 +1071,11 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
               color: "#fff", fontSize: "11px", fontWeight: 700,
               boxShadow: `0 4px 12px ${theme.accentGlow}`,
             }}
-          >Book  Nefweow </button>
+          >Book Now</button>
         </div>
       </div>
     );
-  } 
+  }
 
   /* ──────────────────────────────────────────────────────
      LAYOUT 3 — RIBBON BANNER
@@ -1699,7 +1699,6 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
             onError={d.onImageError}
             style={{
               position: "absolute",
-              top: 0,
               left: 0,
               top: "65px",
               width: "100%",
@@ -1758,7 +1757,7 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
               cursor: "pointer",
               padding: 0,
               width: "25px", height: "25px", borderRadius: "50%",
-              background: "rgba(100, 87, 146, 0.14)", border: "1px solid rgba(106, 29, 240, 0.49)",
+              // border: "px solid rgba(106, 29, 240, 0.49)",
               color: "rgba(124, 58, 237, 0.76)",
               transition: "color 0.2s ease"
             }}
@@ -1931,7 +1930,7 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
             onError={d.onImageError}
             style={{
               maxWidth: "80%", maxHeight: "85%", objectFit: "contain",
-              filter: isHovered ? "none" : "saturate(1.0) brightness(0.92)",
+              // filter: isHovered ? "none" : "saturate(1.0) brightness(0.92)",
               transition: "filter 0.3s ease",
               filter: isHovered ? "brightness(1.10)" : "brightness(1)",
             }}
@@ -2279,7 +2278,7 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
           >
             <RatingStar size={12} color="#ff8800" />
             <span style={{ fontSize: "10px", fontWeight: 700, color: "#6b21a8" }}>{d.ratingScore}</span>
-            <span style={{ fontSize: "9px", fontWeight: 500, color: "#07020c" }}>({d.reviewCount})</span>
+            <span style={{ fontSize: "9px", fontWeight: 500, color: "#07020c" }}>({d.reviewCount}+)</span>
           </div>
 
           {/* Circle Frame Wrapper: Image now fills the circle completely */}
@@ -2465,7 +2464,7 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
           >
             <RatingStar size={12} color="#ff8800" />
             <span style={{ fontSize: "10px", fontWeight: 700, color: "#6b21a8" }}>{d.ratingScore}</span>
-            <span style={{ fontSize: "9px", fontWeight: 500, color: "#07020c" }}>({d.reviewCount})</span>
+            <span style={{ fontSize: "9px", fontWeight: 500, color: "#07020c" }}>({d.reviewCount}+)</span>
           </div>
 
           {/* Circle Frame Wrapper: Image now fills the circle completely */}
@@ -2676,7 +2675,7 @@ const renderCard = (sectionindex, d, theme, isHovered, onHoverStart, onHoverEnd)
               transform: isHovered ? "scale(1.05)" : "scale(1)",
               transition: "transform 0.2s ease-in-out",
             }}
-          >Order Now</button>
+          >Order Now </button>
         </div>
       </div>
     );
@@ -2696,7 +2695,7 @@ const DynamicSections = ({
   liteMode = false,
 }) => {
 
-  console.log(sections.length, "sections")
+  // console.log(sections.length, "sections")
   if (!sections?.length) return null;
 
   const [hoveredViewAllIndex, setHoveredViewAllIndex] = useState(null);

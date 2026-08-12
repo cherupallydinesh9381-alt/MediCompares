@@ -15,7 +15,7 @@ export default defineConfig({
   },
   base: "/",
   build: {
-    outDir: 'web/dist',
+    outDir: 'dist',
   },
   server: {
     host: true,

@@ -13,7 +13,7 @@
 	z-index: 1;
 	&::after {
 		content: '';
-		background: url(../../../../public/assets/img/banner-bg.png);
+		background: url(/assets/img/banner-bg.png);
         @include mixins.background-properties(variables.$cover, variables.$no-repeat, variables.$center);
         @include mixins.position(variables.$absolute, 0, null, null, 0);
 		width: 100%;

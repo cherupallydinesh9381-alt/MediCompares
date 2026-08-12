@@ -5737,7 +5737,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav>a i {
 
 .banner-section::after {
   content: "";
-  background: url(../img/bg/ban-bg.png), #f9fcff;
+  background: url(/assets/img/bg/ban-bg.png), #f9fcff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -6082,7 +6082,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav>a i {
 
 .section-header-one .section-title::before {
   content: "";
-  background: url(../img/icons/header-icon.svg);
+  background: url(/assets/img/icons/header-icon.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -6175,7 +6175,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav>a i {
 
 .work-section::after {
   content: "";
-  background: url(../img/bg/doctor-shape-img1.png);
+  background: url(/assets/img/bg/doctor-shape-img1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -6196,7 +6196,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav>a i {
 
 .work-section::before {
   content: "";
-  background: url(../img/bg/doctor-shape-img2.png);
+  background: url(/assets/img/bg/doctor-shape-img2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -6347,7 +6347,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav>a i {
 
 .work-section::after {
   content: "";
-  background: url(../img/bg/doctor-shape-img1.png);
+  background: url(/assets/img/bg/doctor-shape-img1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -6368,7 +6368,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav>a i {
 
 .work-section::before {
   content: "";
-  background: url(../img/bg/doctor-shape-img2.png);
+  background: url(/assets/img/bg/doctor-shape-img2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -6521,7 +6521,7 @@ header.inner-header .header-nav .header-navbar-rht li.noti-nav>a i {
 
 .app-bg::before {
   content: "";
-  background: url("../img/bg/app-bgs.png");
+  background: url("/assets/img/bg/app-bgs.png");
   position: absolute;
   top: 0;
   right: 0;
@@ -7744,7 +7744,7 @@ span.refund {
 }
 
 .main-wrapper.home-ten .banner-section {
-  background: url(../img/banner/banner-051.jpg);
+  background: url(/assets/img/banner/banner-051.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8901,7 +8901,7 @@ span.refund {
 }
 
 .app-section.app-sec-twelve.pharmacy-app-sec .app-bg {
-  background-image: url(../img/pharmacy-app-bg.png);
+  background-image: url(/assets/img/pharmacy-app-bg.png);
   background-color: #8059ca;
   background-size: 70% 100%;
   background-repeat: no-repeat;
@@ -9711,7 +9711,7 @@ ul li {
 
 .app-sec-twelve .app-bg {
   background: #3538cd;
-  background-image: url(../img/bg/section-bg-05.png);
+  background-image: url(/assets/img/bg/section-bg-05.png);
   background-position: left -60px top;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -10579,7 +10579,7 @@ ul li {
   position: absolute;
   top: -5px;
   right: -5px;
-  background-image: url("../img/icons/badge.svg");
+  background-image: url("/assets/img/icons/badge.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -10682,7 +10682,7 @@ ul li {
 }
 
 .banner-section.banner-sec-one {
-  background: url("../img/bg/home-banner-bg.png") no-repeat;
+  background: url("/assets/img/bg/home-banner-bg.png") no-repeat;
   background-size: cover;
 }
 
@@ -14016,7 +14016,7 @@ select.ssa-input-field {
 }
 
 .features-section {
-  background-image: url("../assets/dentalbg.png");
+  background-image: url("/assets/dentalbg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
